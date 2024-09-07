@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			CSC301 Calculator
+		</title>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="code.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+		<!-- Google font link ^^-->
+	</head>
+
+	<body>
+		<!-- START OF CALCULATOR -->
+		<div id="calculatorBackground" style="background-image: url(images/background.jpg)">
+			<!-- START OF ACTION BAR -->
+			<div id="actions">
+				<img src="images/actionBarBackground.jpg" id="actionBarBackground">
+				<!-- Action bar refers to the functions of the calculator such as add items -->
+				<div class="calculatorButtons">
+					<div class="actionGroup">
+						<div class="actionHeader">Add Item</div>
+						Item Name <input type="text" id="addItemName" style="width: 70px" value="Apple"><br>
+						Item Price <input type="text" id="addItemPrice" style="width: 70px" value="10"><br>
+						Item Quantity <input type="text" id="addItemQuantity" style="width: 70px" value="10"><br>
+						<button id="addItem">Add</button>
+					</div>
+				</div>
+
+				<div class="calculatorButtons">
+					<div class="actionGroup">
+						<div class="actionHeader">Remove Item</div>
+						Item Name <input type="text" id="removeItemName" style="width: 70px" value=""><br>
+						Item Quantity <input type="text" id="removeItemQuantity" style="width: 70px" value=""><br>
+						<button id="removeItem">Remove</button>
+					</div>
+				</div>
+
+				<div class="calculatorButtons">
+					<div class="actionGroup">
+						<div class="actionHeader">Discount</div>
+						Discount Percentage <input type="text" id="discountPercentage" style="width: 70px" value="0"><br>
+						<button id="applyDiscount">Apply</button>
+					</div>
+				</div>
+
+				<div class="calculatorButtons">
+					<div class="actionGroup">
+						<div class="actionHeader">Add Tax</div>
+						<button id="addTax" class="btnAction">Apply</button>
+					</div>
+				</div>
+
+				<div class="calculatorButtons">
+					<div id="cntNextRound" class="actionGroup"">
+						<div class="actionHeader">Remove Tax</div>
+						<button id="removeTax" class="btnAction">Apply</button>
+					</div>
+				</div>
+			</div>
+			<!-- END OF ACTION BAR -->
+			<div id="itemTitle">Items: <br></div>
+			<div id="itemList"><br></div>
+			<!-- Tutorial/Error Display Screen -->
+			<div id="displayScreen">
+				<img id="screen" src="images/calculator.png">
+
+				<div id="speech">
+					<div id="textArea"></div>
+					<button id="btnNext">Next</button>
+				</div> 
+			</div>
+
+			<!-- Displays the final price -->
+			<div id="finalPriceInfo">
+				<div id="finalPrice">
+					$0
+				</div>
+
+				<div id="currentPrice">
+					Current <br> Price
+				</div>
+			</div>
+		</div>
+		<!-- END OF CALCULATOR -->
+	</body>
+</html>
