@@ -32,6 +32,6 @@ The **Price Calculator** is a web-based tool designed to calculate the total cos
 
 ## Screenshots
 
-![Price Calculator Interface](calculator_interface.png)
+![Price Calculator Interface](PriceCalculatorInterface.png)
 
 
